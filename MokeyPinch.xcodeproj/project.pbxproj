@@ -13,6 +13,8 @@
 		3D5BE5BC1BAA60FE00EB602F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5BE5BB1BAA60FE00EB602F /* Images.xcassets */; };
 		3D5BE5BF1BAA60FE00EB602F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5BE5BD1BAA60FE00EB602F /* LaunchScreen.xib */; };
 		3D5BE5CB1BAA60FE00EB602F /* MokeyPinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BE5CA1BAA60FE00EB602F /* MokeyPinchTests.swift */; };
+		3D5BE5DD1BAA6A5700EB602F /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3D5BE5D71BAA6A5700EB602F /* chomp.caf */; };
+		3D5BE5DE1BAA6A5700EB602F /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3D5BE5D81BAA6A5700EB602F /* hehehe1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3D5BE5C41BAA60FE00EB602F /* MokeyPinchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MokeyPinchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5BE5C91BAA60FE00EB602F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D5BE5CA1BAA60FE00EB602F /* MokeyPinchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokeyPinchTests.swift; sourceTree = "<group>"; };
+		3D5BE5D71BAA6A5700EB602F /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		3D5BE5D81BAA6A5700EB602F /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		3D5BE5A61BAA60FD00EB602F = {
 			isa = PBXGroup;
 			children = (
+				3D5BE5D41BAA6A5700EB602F /* Resources */,
 				3D5BE5B11BAA60FD00EB602F /* MokeyPinch */,
 				3D5BE5C71BAA60FE00EB602F /* MokeyPinchTests */,
 				3D5BE5B01BAA60FD00EB602F /* Products */,
@@ -110,6 +115,15 @@
 				3D5BE5C91BAA60FE00EB602F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D5BE5D41BAA6A5700EB602F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D5BE5D71BAA6A5700EB602F /* chomp.caf */,
+				3D5BE5D81BAA6A5700EB602F /* hehehe1.caf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5BE5DD1BAA6A5700EB602F /* chomp.caf in Resources */,
 				3D5BE5BA1BAA60FE00EB602F /* Main.storyboard in Resources */,
 				3D5BE5BF1BAA60FE00EB602F /* LaunchScreen.xib in Resources */,
 				3D5BE5BC1BAA60FE00EB602F /* Images.xcassets in Resources */,
+				3D5BE5DE1BAA6A5700EB602F /* hehehe1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

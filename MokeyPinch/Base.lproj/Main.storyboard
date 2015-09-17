@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MokeyPinch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="eD0-pB-Nu7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tc7-nl-Wlt" appends="YES" id="G7T-Fm-EL4"/>
+                                    <outletCollection property="gestureRecognizers" destination="ed2-7x-heA" appends="YES" id="nco-si-fcy"/>
+                                    <outletCollection property="gestureRecognizers" destination="ab3-Xk-6TS" appends="YES" id="yHW-lx-cuV"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="Noj-X9-fxR">
+                                <rect key="frame" x="114" y="311" width="146" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f0h-PN-Awb" appends="YES" id="m11-nW-wWZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="vY8-xI-VtB" appends="YES" id="l6o-gt-3ZK"/>
+                                    <outletCollection property="gestureRecognizers" destination="xf3-PY-UlE" appends="YES" id="F1F-4u-9jp"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="tc7-nl-Wlt">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="6Sm-r2-Oxk"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f0h-PN-Awb">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="iQi-4j-gni"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="ed2-7x-heA">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="cMn-Id-B1X"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="vY8-xI-VtB">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="3gy-eU-GW6"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="ab3-Xk-6TS">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="3R4-Sy-gem"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="xf3-PY-UlE">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="E3t-va-kNk"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="162" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banana" width="175" height="175"/>
+        <image name="monkey" width="168" height="168"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
